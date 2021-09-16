@@ -6,17 +6,18 @@ public final class Strings {
 	public static String capitalize(String str) {
 		String ret = str;
 		if (str == null) {
-			ret = str;
-		} else if (str.length() == 0) {
-			ret = str;
-		} else {
-			if (str.length() == 1) {
-				ret = str.toUpperCase();
-			} else {
-				ret = str.substring(0, 1).toUpperCase() + str.substring(1);
-			}
+			return str;
 		}
-		return ret;
+		;
+		if (str.length() == 0) {
+			return str;
+		}
+		;
+		if (str.length() == 1) {
+			return str.toUpperCase();
+		}
+		;
+		return str.substring(0, 1).toUpperCase() + str.substring(1);
 	}
 
 }
