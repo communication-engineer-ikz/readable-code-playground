@@ -4,27 +4,25 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import readable.code.playground.Strings;
-
 public class StringsTest {
 
 	@Test
-	public void testCapitalize_null() {
-		assertNull(Strings.capitalize(null));
+	public void testCapitalizeInitialCharacter_null() {
+		assertNull(Strings.capitalizeInitialCharcter(null));
 	}
 
 	@Test
-	public void testCapitalize_blank() {
-		assertEquals("", Strings.capitalize(""));
+	public void testCapitalizeInitialCharacter_blank() {
+		assertEquals("", Strings.capitalizeInitialCharcter(""));
 	}
 
 	@Test
-	public void testCapitalize_multiLetter() {
-		assertEquals("Abc", Strings.capitalize("abc"));
+	public void testCapitalizeInitialCharacter_multiLetter() {
+		assertEquals("Abc", Strings.capitalizeInitialCharcter("abc"));
 	}
 
 	@Test
-	public void testCapitalize_oneLetter() {
-		assertEquals("A", Strings.capitalize("a"));
+	public void testCapitalizeInitialCharacter_oneLetter() {
+		assertEquals("A", Strings.capitalizeInitialCharcter("a"));
 	}
 }
