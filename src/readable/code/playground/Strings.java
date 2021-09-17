@@ -9,7 +9,7 @@ public final class Strings {
 
 		if (StringUtils.isEmpty(str)) {
 			return str;
-		};
+		}
 
 		String initialChar = str.substring(0, 1).toUpperCase();
 		String resultStr;
