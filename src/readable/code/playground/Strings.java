@@ -12,7 +12,13 @@ public final class Strings {
 		};
 
 		String initialChar = str.substring(0, 1).toUpperCase();
-		String resultStr = (str.length() == 0) ? initialChar : initialChar + str.substring(1);
+		String resultStr;
+
+		if (str.length() == 1) {
+			resultStr = initialChar;
+		} else {
+			resultStr = initialChar + str.substring(1);
+		}
 
 		return resultStr;
 	}
